@@ -33,8 +33,8 @@ export async function placeBet(candidate, amountInEth) {
     const contract = getContract();
     return contract.methods.bet(candidate).send({
         value: Web3.utils.toWei(amountInEth, "ether"),
-        gas:47575,
-        gasPrice: "29100000015"
+        // gas:47575,
+        // gasPrice: "29100000015"
     });
 }
 
